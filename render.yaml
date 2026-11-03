@@ -4,4 +4,9 @@ services:
     runtime: python
     plan: free
     buildCommand: pip install -r requirements.txt
-    startCommand: python mcp_test_server.py
+    startCommand: python odoo_mcp_server.py
+    envVars:
+      - key: ODOO_URL
+        value: https://erp.vietmro.com
+      - key: ODOO_DB
+        value: vmoerp_prod
