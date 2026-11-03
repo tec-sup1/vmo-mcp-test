@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: vmo-mcp-test
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python mcp_test_server.py
